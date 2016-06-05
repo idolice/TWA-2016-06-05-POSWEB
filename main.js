@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $(".add1").bind("click",addApple);
+    $(".dec1").bind("click",decApple);
+    $(".add2").bind("click",addColar);
+    $(".dec2").bind("click",decColar);
+    $(".add3").bind("click",addSpirit);
+    $(".dec3").bind("click",decSpirit);
+    $(".add4").bind("click",addLitchi);
+    $(".dec4").bind("click",decLitchi);
+    $(".add5").bind("click",addBatery);
+    $(".dec5").bind("click",decBatery);
+    $(".add6").bind("click",addNodle);
+    $(".dec6").bind("click",decNodle);
+    $(".submit").bind("click",goShopCar);
+})
