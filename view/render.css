@@ -1,0 +1,78 @@
+.head{
+    clear:both;
+    text-align:center;
+    font-family:"Times New Roman";
+    font-size:40px;
+    font-weight:bold;
+    background-color:#F0F0F0;
+    width:100%;
+    height:80px;
+    position:relative;
+}
+
+span{
+    display:inline-block;
+    font-size:28px;
+    text-align:center;
+}
+
+.container{
+    text-align:center;
+    width:100%;
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+
+}
+
+.apple,.cococolar,.Sprite,.Litchi,.battery,.Instantnoodles{
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    background-color:#FFCCCC;
+}
+
+#c1,#c2,#c3,#c4,#c5,#c6{
+    margin-top:40px;
+    border:2px solid #696969;
+
+}
+.submit{
+     height:32px;
+     margin:20px;
+     background: #FFCCCC;
+     color: #feeef5;
+     border: solid 1px #d2729e;
+     background: -webkit-gradient(linear, left top, left bottom, from(#feb1d3), to(#FFCCCC));
+     background: -moz-linear-gradient(top, #feb1d3, #FFCCCC);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feb1d3', endColorstr='#FFCCCC');
+     padding:0px 20px 0px 20px;
+    	text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+
+    	-webkit-border-radius: 30px;
+    	-moz-border-radius: 30px;
+    	border-radius: 30px;
+
+    	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    	-moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    	box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+
+    	-webkit-transition: all 0.15s ease;
+    	-moz-transition: all 0.15s ease;
+    	-o-transition: all 0.15s ease;
+    	-ms-transition: all 0.15s ease;
+    	transition: all 0.15s ease;
+}
+
+.pic{
+    display:inline-block;
+}
+
+.item{
+    font-family:"黑体";
+    font-weight:bold;
+    font-size:30px;
+}

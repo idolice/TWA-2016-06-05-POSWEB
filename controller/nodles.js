@@ -1,7 +1,7 @@
 function addNodle(){
     itemsNum[5]++;
    // alert(itemsNum[0]);
-    $(".number6").html(itemsNum[5]);
+    $(".number6").html("number:"+itemsNum[5]);
 }
 function decNodle(){
   //  alert(itemsNum[5]);
@@ -10,5 +10,5 @@ function decNodle(){
     }else{
         itemsNum[5]--;
     }
-     $(".number6").html(itemsNum[5]);
+     $(".number6").html("number:"+itemsNum[5]);
 }

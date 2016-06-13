@@ -1,7 +1,7 @@
 function addLitchi(){
     itemsNum[3]++;
    // alert(itemsNum[0]);
-    $(".number4").html(itemsNum[3]);
+    $(".number4").html("number:"+itemsNum[3]);
 }
 function decLitchi(){
     //alert(itemsNum[3]);
@@ -10,5 +10,5 @@ function decLitchi(){
     }else{
         itemsNum[3]--;
     }
-     $(".number4").html(itemsNum[3]);
+     $(".number4").html("number:"+itemsNum[3]);
 }

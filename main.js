@@ -13,3 +13,107 @@ $(document).ready(function(){
     $(".dec6").bind("click",decNodle);
     $(".submit").bind("click",goShopCar);
 })
+
+
+//var Head=React.createClass({
+//
+//    render:function(){
+//    return (
+//            <div/>
+//            )
+//    }
+//})
+//
+//var Apple=React.createClass({
+//    render:function(){
+//    return (<div class="apple">
+//                <input class="dec1" value="-" type="button">
+//                <span class="item">apple</span>
+//                <input class="add1" value="+" type="button">
+//                <span class="number1"></span>
+//            </div>);
+//    }
+//})
+//
+//var Colar=React.createClass({
+//    render:function(){
+//    return (
+//            <div class="cococolar">
+//                <input class="dec2" value="-" type="button">
+//                <span class="item">cococolar</span>
+//                <input class="add2" value="+" type="button">
+//                <span class="number2"></span>
+//            </div>
+//    );
+//    }
+//})
+//
+//var Sprite=React.createClass({
+//    render:function(){
+//    return (
+//            <div class="Sprite">
+//                <input class="dec3" value="-" type="button">
+//                <span class="item">Sprite</span>
+//                <input class="add3" value="+" type="button">
+//                <span class="number3"></span>
+//            </div>
+//    );
+//    }
+//})
+//
+//var Litchi=React.createClass({
+//    render:function(){
+//    return (
+//            <div class="Litchi">
+//                <input class="dec4" value="-" type="button">
+//                <span class="item">Litchi</span>
+//                <input class="add4" value="+" type="button">
+//                <span class="number4"></span>
+//            </div>
+//    );
+//    }
+//})
+//
+//var Battery=React.createClass({
+//    render:function(){
+//    return (
+//            <div class="battery">
+//                <input class="dec5" value="-" type="button">
+//                <span class="item">battery</span>
+//                <input class="add5" value="+" type="button">
+//                <span class="number5"></span>
+//            </div>
+//    );
+//    }
+//})
+//
+//var Instantnoodles=React.createClass({
+//    render:function(){
+//    return (
+//            <div class="Instantnoodles">
+//                <input class="dec6" value="-" type="button">
+//                <span class="item">Instant noodles</span>
+//                <input class="add6" value="+" type="button">
+//                <span class="number6"></span>
+//            </div>
+//    )
+//    }
+//})
+//
+//var ItemList=React.createClass({
+//    render:function(){
+//    return (
+//            <div>
+//              <Apple/>
+//              <Colar/>
+//              <Sprite/>
+//              <Litchi/>
+//              <Battery/>
+//              <Instantnoodles/>
+//            </div>
+//    )
+//    }
+//})
+//
+//ReactDOM.render(<ItemList/>,
+//document.getElementById("container"));

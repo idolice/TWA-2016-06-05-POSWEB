@@ -1,7 +1,7 @@
 function addSpirit(){
     itemsNum[2]++;
    // alert(itemsNum[0]);
-    $(".number3").html(itemsNum[2]);
+    $(".number3").html("number:"+itemsNum[2]);
 }
 function decSpirit(){
    // alert(itemsNum[2]);
@@ -10,5 +10,5 @@ function decSpirit(){
     }else{
         itemsNum[2]--;
     }
-     $(".number3").html(itemsNum[2]);
+     $(".number3").html("number:"+itemsNum[2]);
 }

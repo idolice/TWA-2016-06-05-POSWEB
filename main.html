@@ -1,7 +1,12 @@
 <html lang="en">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+        <!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./build/react.min.js"></script>
+        <script src="./build/react-dom.min.js"></script>
         <script type="text/javascript" src="./controller/Apple.js"></script>
         <script type="text/javascript" src="./controller/colar.js"></script>
         <script type="text/javascript" src="./controller/spirit.js"></script>
@@ -12,44 +17,69 @@
         <script type="text/javascript" src="./module/item.js"></script>
         <script type="text/javascript" src="./module/function.js"></script>
         <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="./view/render.css">
     </head>
     <body>
         <div class="container">
-            <div class="apple">
+            <div class="ct">
+                <div class="head">idolice's store</div>
+            </div>
+            <div class="row">
+            <div class="col-md-6" id="c1">
                 <input class="dec1" value="-" type="button">
-                <span class="item">apple</span>
+                <div class="pic">
+                    <img src="./pic/apple.jpg" height="180" width="180">
+                    <div class="item">apple</div>
+                </div>
                 <input class="add1" value="+" type="button">
-                <span class="number1"></span>
+                <span class="number1">number:0</span>
             </div>
-            <div class="cococolar">
+            <div class="col-md-6" id="c2">
                 <input class="dec2" value="-" type="button">
-                <span class="item">cococolar</span>
+                <div class="pic">
+                    <img src="./pic/colar.jpg" height="180" width="180">
+                    <div class="item">cococolar</div>
+                </div>
                 <input class="add2" value="+" type="button">
-                <span class="number2"></span>
+                <span class="number2">number:0</span>
             </div>
-            <div class="Sprite">
+            <div class="col-md-6" id="c3">
                 <input class="dec3" value="-" type="button">
-                <span class="item">Sprite</span>
+                <div class="pic">
+                    <img src="./pic/spirit.jpg" height="180" width="180">
+                    <div class="item">Sprite</div>
+                </div>
                 <input class="add3" value="+" type="button">
-                <span class="number3"></span>
+                <span class="number3">number:0</span>
             </div>
-            <div class="Litchi">
+            <div class="col-md-6" id="c4">
                 <input class="dec4" value="-" type="button">
-                <span class="item">Litchi</span>
+                <div class="pic">
+                    <img src="./pic/litch.jpg" height="180" width="180">
+                    <div class="item">Litchi</div>
+                </div>
                 <input class="add4" value="+" type="button">
-                <span class="number4"></span>
+                <span class="number4">number:0</span>
             </div>
-            <div class="battery">
+            <div class="col-md-6" id="c5">
                 <input class="dec5" value="-" type="button">
-                <span class="item">battery</span>
+                <div class="pic">
+                    <img src="./pic/batery.jpg" height="180" width="180">
+                    <div class="item">battery</div>
+                </div>
                 <input class="add5" value="+" type="button">
-                <span class="number5"></span>
+                <span class="number5">number:0</span>
             </div>
-            <div class="Instantnoodles">
+            <div class="col-md-6" id="c6">
                 <input class="dec6" value="-" type="button">
-                <span class="item">Instant noodles</span>
+                <div class="pic">
+                    <img src="./pic/instant.png" height="180" width="180">
+                    <div class="item">Instant noodles</div>
+                </div>
                 <input class="add6" value="+" type="button">
-                <span class="number6"></span>
+                <span class="number6">number:0</span>
+            </div>
+
             </div>
             <input type="button" class="submit" value="buy">
         </div>

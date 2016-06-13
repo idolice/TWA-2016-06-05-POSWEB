@@ -1,7 +1,7 @@
 function addColar(){
     itemsNum[1]++;
    // alert(itemsNum[0]);
-    $(".number2").html(itemsNum[1]);
+    $(".number2").html("number:"+itemsNum[1]);
 }
 function decColar(){
     //alert(itemsNum[1]);
@@ -10,5 +10,5 @@ function decColar(){
     }else{
         itemsNum[1]--;
     }
-     $(".number2").html(itemsNum[1]);
+     $(".number2").html("number:"+itemsNum[1]);
 }

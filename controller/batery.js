@@ -1,7 +1,7 @@
 function addBatery(){
     itemsNum[4]++;
    // alert(itemsNum[0]);
-    $(".number5").html(itemsNum[4]);
+    $(".number5").html("number:"+itemsNum[4]);
 }
 function decBatery(){
    // alert(itemsNum[4]);
@@ -10,5 +10,5 @@ function decBatery(){
     }else{
         itemsNum[4]--;
     }
-     $(".number5").html(itemsNum[4]);
+     $(".number5").html("number:"+itemsNum[4]);
 }

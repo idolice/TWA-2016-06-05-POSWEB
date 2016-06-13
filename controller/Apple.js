@@ -1,7 +1,7 @@
 function addApple(){
     itemsNum[0]++;
    // alert(itemsNum[0]);
-   $(".number1").html(itemsNum[0]);
+   $(".number1").html("number:"+itemsNum[0]);
 }
 function decApple(){
    // alert(itemsNum[0]);
@@ -10,5 +10,5 @@ function decApple(){
     }else{
         itemsNum[0]--;
     }
-     $(".number1").html(itemsNum[0]);
+     $(".number1").html("number:"+itemsNum[0]);
 }
