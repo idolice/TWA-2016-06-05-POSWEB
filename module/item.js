@@ -6,4 +6,4 @@ function Item(barcode, name, unit, price,num) {
     this.num=num;
 }
 
-var itemsNum=[0,0,0,0,0,0];
+var items=[];

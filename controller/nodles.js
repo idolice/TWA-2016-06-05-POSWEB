@@ -1,14 +1,14 @@
 function addNodle(){
-    itemsNum[5]++;
+    items[5]++;
    // alert(itemsNum[0]);
-    $(".number6").html("number:"+itemsNum[5]);
+    $(".number6").html("number:"+items[5]);
 }
 function decNodle(){
   //  alert(itemsNum[5]);
-    if(itemsNum[5]<1){
+    if(items[5]<1){
         alert("Apple Number is already 0!");
     }else{
-        itemsNum[5]--;
+        items[5]--;
     }
-     $(".number6").html("number:"+itemsNum[5]);
+     $(".number6").html("number:"+items[5]);
 }

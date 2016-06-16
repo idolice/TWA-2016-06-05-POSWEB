@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    items=[0,0,0,0,0,0];
+    editShoppingData();
+    $(".number1").html("number:"+items[0]);
+    $(".number5").html("number:"+items[4]);
+    $(".number2").html("number:"+items[1]);
+    $(".number4").html("number:"+items[3]);
+    $(".number6").html("number:"+items[5]);
+    $(".number3").html("number:"+items[2]);
     $(".add1").bind("click",addApple);
     $(".dec1").bind("click",decApple);
     $(".add2").bind("click",addColar);
@@ -12,6 +20,7 @@ $(document).ready(function(){
     $(".add6").bind("click",addNodle);
     $(".dec6").bind("click",decNodle);
     $(".submit").bind("click",goShopCar);
+
 })
 
 

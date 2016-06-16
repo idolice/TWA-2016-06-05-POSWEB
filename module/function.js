@@ -10,6 +10,28 @@ function loadAllItems() {
     ];
 }
 
+function editShoppingData(){
+    if(window.location.href.indexOf("?")>0){
+
+        items[0]=parseInt(getUrlParam("apple"));
+        items[1]=parseInt(getUrlParam("colar"));
+        items[2]=parseInt(getUrlParam("spirit"));
+        items[3]=parseInt(getUrlParam("litch"));
+        items[4]=parseInt(getUrlParam("battery"));
+        items[5]=parseInt(getUrlParam("noddles"));
+
+    }
+}
+
+var newItems=loadAllItems();
+
+function getUrlParam(name) {
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+
+
+}
 
 function ifArrayHasBarcodeAlready(barcode,Array){
     for(var i=0;i<Array.length;i++){
@@ -26,22 +48,22 @@ function splitInputString(){
    // alert(tempItems[0].barcode);
     for(var i=0;i<tempItems.length;i++){
       if(tempItems[i].barcode=="ITEM000002") {
-        tempItems[i].num=itemsNum[0];
+        tempItems[i].num=items[0];
       }
       if(tempItems[i].barcode=="ITEM000000"){
-        tempItems[i].num=itemsNum[1];
+        tempItems[i].num=items[1];
       }
       if(tempItems[i].barcode=="ITEM000001"){
-         tempItems[i].num=itemsNum[2];
+         tempItems[i].num=items[2];
       }
       if(tempItems[i].barcode=="ITEM000003"){
-         tempItems[i].num=itemsNum[3];
+         tempItems[i].num=items[3];
       }
       if(tempItems[i].barcode=="ITEM000004"){
-         tempItems[i].num=itemsNum[4];
+         tempItems[i].num=items[4];
       }
       if(tempItems[i].barcode=="ITEM000005"){
-         tempItems[i].num=itemsNum[5];
+         tempItems[i].num=items[5];
       }
 
 
@@ -66,9 +88,7 @@ function getDataString(){
 }
 
 function getOutPutString(allItemsAddNum){
-    var outPutString='***<没钱赚商店>购物清单***\n' +
-                     '打印时间：' + getDataString() + '\n' +
-                     '----------------------\n' ;
+    var outPutString="";
     var total=0;
     for(var j=0;j<allItemsAddNum.length;j++){
         //alert(allItemsAddNum[j].num);
@@ -77,10 +97,10 @@ function getOutPutString(allItemsAddNum){
         var singleTotal=allItemsAddNum[j].price*allItemsAddNum[j].num;
         total+=singleTotal;
         //alert(singleTotal);
-        outPutString=outPutString+'名称：'+allItemsAddNum[j].name+'，数量：'+allItemsAddNum[j].num+allItemsAddNum[j].unit+'，单价：'+allItemsAddNum[j].price+'(元)，小计：'+singleTotal+'(元)\n';
+        outPutString=outPutString+'名称：'+allItemsAddNum[j].name+'，数量：'+allItemsAddNum[j].num+allItemsAddNum[j].unit+'，单价：'+allItemsAddNum[j].price+'(元)，小计：'+singleTotal+'(元)</br>';
         }
     }
-    outPutString+=".......总计："+total+"(元)";
+    outPutString+="总计："+total+"(元)";
 
     return outPutString;
 
@@ -110,7 +130,7 @@ function getShopCarData(allItemsAddNum){
 //}
 
 function changeStringToSet(input){
-    var newItems=loadAllItems();
+
  // alert(newItems);
     input=input.substring(1,input.length-1);
   //  alert(input);
@@ -182,3 +202,4 @@ function changeStringToSet(input){
  // alert(newItems[0].name);
     return newItems;
 }
+
